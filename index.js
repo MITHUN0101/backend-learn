@@ -37,7 +37,7 @@ app.get("/",(req,res)=>{
 //Error handelling
 
 app.get("/error",(req,res)=>{
-    throw new Error()
+    throw new Error("it is an custom error")
 })
 
 app.use(function errorHandler (err, req, res, next) {
